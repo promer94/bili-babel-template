@@ -1,0 +1,29 @@
+{
+  "name": "hedgehog-lab-core",
+  "version": "0.1.0",
+  "files": [
+    "dist"
+  ],
+  "license": "Apache-2.0",
+  "main": "./dist/index.min.js",
+  "module": "./dist/index.esm.min.js",
+  "types": "./dist/index.d.ts",
+  "git": "https://github.com/promer94/hedgehog-lab-core.git",
+  "devDependencies": {
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "babel-template": "^6.26.0"
+  },
+  "dependencies": {
+    "np": "^6.3.2",
+    "bili": "^5.0.5"
+  },
+  "np": {
+    "access": "public",
+    "yarn": false,
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "build": "bili",
+    "release": "np"
+  }
+}
